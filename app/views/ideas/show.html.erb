@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-hello
+
 <p>
   <b>Name:</b>
   <%= @idea.name %>
@@ -12,7 +12,7 @@ hello
 
 <p>
   <b>Picture:</b>
-  <%= @idea.picture %>
+  <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 </p>
 
 
